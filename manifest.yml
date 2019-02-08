@@ -1,0 +1,7 @@
+applications:
+- name: demo-correto
+  path: target/demo-corretto-0.0.1-SNAPSHOT.jar
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git#v4.17.2
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { repository_root: "https://raw.githubusercontent.com/making/amazon-corretto-buildpack/master" } }'
